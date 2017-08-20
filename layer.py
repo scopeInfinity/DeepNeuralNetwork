@@ -60,7 +60,6 @@ class DeepNeuralNetwork:
         error = 1
         lerror = 2
         if True:
-#        while abs(lerror-error)>1e-2:
             # Outermost Layer
             lerror = error
             error = 0
@@ -70,7 +69,6 @@ class DeepNeuralNetwork:
                 p._d = (test_output[i] -p.out)*p.out*(1-p.out)
                 for i in range(len(p.linput)):
                     p.weights[i]+=learning_rate*p._d*p.linput[i]
-                    #        print p.weights
 
             # print "Error %f " % error
             # Inner Layers
@@ -85,6 +83,7 @@ class DeepNeuralNetwork:
                     for i in range(len(p.linput)):
                         p.weights[i]+=learning_rate*p._d*p.linput[i]        
 
+# Sample Functions to learn
 def test_xor(bits=5):
     tests = []
     for i in range(1<<bits):
@@ -111,6 +110,7 @@ def test_pallindome(bits=5):
         tests.append((in_,[ispallindome]))
     return tests
 
+# High and low watermark
 def watermark(output):
     val = None
     if output>0.8:

@@ -121,12 +121,11 @@ def watermark(output):
 
 if __name__ == "__main__":
     net = DeepNeuralNetwork([5,10,1])
-    func = test_xor
+    func = test_pallindome
     i=0
-    while i < 100000:
+    while i < 5000:
         i+=1
-        if i%10000==0:
-            print "Train Id %d " % i
+        print "Train Id %d " % i
         for _in,_out in func():
             net.backpropogation(_in,_out)
 

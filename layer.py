@@ -26,6 +26,11 @@ class Layer:
         for i in range(len(inputs)):
             self.perceptrons[i].out = inputs[i]
 
+    def printit(self):
+        print "Layer Weights"
+        for p in self.perceptrons:
+            print p.weights
+
     '''
     inputs = [in1,in2,in3,...]
     outputs = [per1out,per2out,...]
@@ -46,6 +51,11 @@ class DeepNeuralNetwork:
                 in_ = layers[i-1]
             self.layers.append(Layer(layers[i],in_))
 
+    def printit(self):
+        print "Weights of Network"
+        for i in range(len(self.layers)-1):
+            self.layers[i+1].printit()
+            
     def compute(self,inputs):
         out = None
         self.layers[0].assign(inputs)
@@ -68,6 +78,7 @@ class DeepNeuralNetwork:
                 error += 0.5*((test_output[i]-p.out)**2)
                 p._d = (test_output[i] -p.out)*p.out*(1-p.out)
                 for i in range(len(p.linput)):
+                    # (Tj - Oj) * (1-Oj ) * Oi * eta
                     p.weights[i]+=learning_rate*p._d*p.linput[i]
 
             # print "Error %f " % error
@@ -81,6 +92,7 @@ class DeepNeuralNetwork:
                         p._d += nlayer.perceptrons[k].weights[i]*nlayer.perceptrons[k]._d
                         p._d*=p.out*(1-p.out)
                     for i in range(len(p.linput)):
+                        # sigma(Wkj) * Oj * (1-Oj ) * Oi * eta
                         p.weights[i]+=learning_rate*p._d*p.linput[i]        
 
 # Sample Functions to learn
@@ -96,7 +108,7 @@ def test_xor(bits=5):
         tests.append((in_,[xor]))
     return tests
 
-def test_pallindome(bits=5):
+def test_pallindrome(bits=5):
     tests = []
     for i in range(1<<bits):
         in_ = []
@@ -121,10 +133,14 @@ def watermark(output):
 
 if __name__ == "__main__":
     net = DeepNeuralNetwork([5,10,1])
-    func = test_pallindome
+    func = test_pallindrome
+    MX = 1000
     i=0
-    while i < 5000:
+    # Number of iterations
+    while i < MX:
         i+=1
+        if i == MX:
+            Perceptron.cout=True
         print "Train Id %d " % i
         for _in,_out in func():
             net.backpropogation(_in,_out)
@@ -139,4 +155,4 @@ if __name__ == "__main__":
         total+=1
         print "%s\tExpected : %s\tObserved : %s, Detailed %s" % (str(_in),str(_out),str(cout),str(output))
     print "Total %d, Correct %d, Binary Accuracy %f " % (total,correct, correct*1.0/total)
-    
+    net.printit()

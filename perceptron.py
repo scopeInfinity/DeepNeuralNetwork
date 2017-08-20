@@ -1,20 +1,24 @@
 import math
-
+import random
 class Perceptron:
     '''
     Perceptron for learning linear binary functions
     '''
-
+    cout = False
     # Number of inputs in binary function
     def __init__(self, c_input):
         # threshold weight and then all input weights
-        self.weights = [0] * (c_input+1)
+        self.weights = []
+        for i in range(c_input+1):
+            self.weights.append(random.random())
         self.c_input = c_input
         self.out = None
 
     # Activation Function
     def activate(self, outgoing):
         self.out = 1/(1+math.exp(-outgoing))
+        if Perceptron.cout:
+            print "Perceptron Out %f " % self.out
         return self.out
 
     # Compute perceptron output

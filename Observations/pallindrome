@@ -1,0 +1,251 @@
+Perceptron Output values for different Inputs
+=============================================
+
+Weights of Network
+Hidden Layer Weights
+[1.0084229173074426, -1.1497374494188628, -3.486448629872676, -0.02967626062936822, 3.4741493147183222, 2.326593647545753]
+[1.5717298744947268, 3.973585643926812, 6.632117973103973, 0.08477266023523763, -6.295240189760521, -2.672158812417683]
+[2.5331225385519898, 3.67140062922193, 3.538604170539787, 1.5646542105009666, 4.026175323074682, 3.6738522666616533]
+[-1.1456950759455442, 6.142318102572448, -1.7307580506899658, -0.36710484503910346, 1.0806557263655308, 6.670088092406629]
+[1.4746201691470682, -1.6529451549912182, 1.208035888674676, 0.2821338402503043, 0.952501219812695, -2.4348511584018158]
+Final Perceptron Weights
+[-0.08609847207791824, 9.783007727734558, 7.694312254221392, -9.62901853577793, -4.061761559738449, -1.1744753502628813]
+
+Format
+------
+Perceptron 1 Out
+Perceptron 2 Out
+Perceptron 3 Out
+Perceptron 4 Out
+Perceptron 5 Out
+Final Perceptron Out
+Input [x,x,x,x,x] Expetec : [x] Observed : [x], Detailed [FloatingPoint Output]
+
+
+Values
+------
+Perceptron Out 0.732711 
+Perceptron Out 0.828030 
+Perceptron Out 0.926431 
+Perceptron Out 0.241276 
+Perceptron Out 0.813759 
+Perceptron Out 0.930654 
+[0, 0, 0, 0, 0]	Expected : [1]	Observed : [1], Detailed [0.9306536037154547]
+Perceptron Out 0.464730 
+Perceptron Out 0.996109 
+Perceptron Out 0.997984 
+Perceptron Out 0.993285 
+Perceptron Out 0.455537 
+Perceptron Out 0.113612 
+[1, 0, 0, 0, 0]	Expected : [0]	Observed : [0], Detailed [0.11361157575753467]
+Perceptron Out 0.077413 
+Perceptron Out 0.999726 
+Perceptron Out 0.997698 
+Perceptron Out 0.053330 
+Perceptron Out 0.935995 
+Perceptron Out 0.071802 
+[0, 1, 0, 0, 0]	Expected : [0]	Observed : [0], Detailed [0.0718022717094875]
+Perceptron Out 0.025888 
+Perceptron Out 0.999995 
+Perceptron Out 0.999941 
+Perceptron Out 0.963239 
+Perceptron Out 0.736860 
+Perceptron Out 0.001435 
+[1, 1, 0, 0, 0]	Expected : [0]	Observed : [0], Detailed [0.0014353764407283916]
+Perceptron Out 0.726859 
+Perceptron Out 0.839768 
+Perceptron Out 0.983662 
+Perceptron Out 0.180524 
+Perceptron Out 0.852803 
+Perceptron Out 0.907179 
+[0, 0, 1, 0, 0]	Expected : [1]	Observed : [1], Detailed [0.9071792816631865]
+Perceptron Out 0.457356 
+Perceptron Out 0.996425 
+Perceptron Out 0.999578 
+Perceptron Out 0.990335 
+Perceptron Out 0.525929 
+Perceptron Out 0.098845 
+[1, 0, 1, 0, 0]	Expected : [0]	Observed : [0], Detailed [0.09884502895912284]
+Perceptron Out 0.075320 
+Perceptron Out 0.999749 
+Perceptron Out 0.999518 
+Perceptron Out 0.037559 
+Perceptron Out 0.950958 
+Perceptron Out 0.072381 
+[0, 1, 1, 0, 0]	Expected : [0]	Observed : [0], Detailed [0.07238147240454067]
+Perceptron Out 0.025150 
+Perceptron Out 0.999995 
+Perceptron Out 0.999988 
+Perceptron Out 0.947785 
+Perceptron Out 0.787822 
+Perceptron Out 0.001429 
+[1, 1, 1, 0, 0]	Expected : [0]	Observed : [0], Detailed [0.0014285898393310303]
+Perceptron Out 0.988822 
+Perceptron Out 0.008806 
+Perceptron Out 0.998585 
+Perceptron Out 0.483746 
+Perceptron Out 0.918872 
+Perceptron Out 0.047239 
+[0, 0, 0, 1, 0]	Expected : [0]	Observed : [0], Detailed [0.04723925333960007]
+Perceptron Out 0.965538 
+Perceptron Out 0.320838 
+Perceptron Out 0.999964 
+Perceptron Out 0.997711 
+Perceptron Out 0.684424 
+Perceptron Out 0.065585 
+[1, 0, 0, 1, 0]	Expected : [0]	Observed : [0], Detailed [0.06558469093784638]
+Perceptron Out 0.730296 
+Perceptron Out 0.870863 
+Perceptron Out 0.999959 
+Perceptron Out 0.142363 
+Perceptron Out 0.974298 
+Perceptron Out 0.917429 
+[0, 1, 0, 1, 0]	Expected : [1]	Observed : [1], Detailed [0.9174294009788823]
+Perceptron Out 0.461672 
+Perceptron Out 0.997219 
+Perceptron Out 0.999999 
+Perceptron Out 0.987214 
+Perceptron Out 0.878917 
+Perceptron Out 0.071243 
+[1, 1, 0, 1, 0]	Expected : [0]	Observed : [0], Detailed [0.07124333729433552]
+Perceptron Out 0.988489 
+Perceptron Out 0.009577 
+Perceptron Out 0.999704 
+Perceptron Out 0.393614 
+Perceptron Out 0.937571 
+Perceptron Out 0.064882 
+[0, 0, 1, 1, 0]	Expected : [0]	Observed : [0], Detailed [0.06488232111703512]
+Perceptron Out 0.964537 
+Perceptron Out 0.339583 
+Perceptron Out 0.999992 
+Perceptron Out 0.996699 
+Perceptron Out 0.741985 
+Perceptron Out 0.070051 
+[1, 0, 1, 1, 0]	Expected : [0]	Observed : [0], Detailed [0.07005089548069793]
+Perceptron Out 0.724411 
+Perceptron Out 0.880100 
+Perceptron Out 0.999991 
+Perceptron Out 0.103132 
+Perceptron Out 0.980493 
+Perceptron Out 0.929116 
+[0, 1, 1, 1, 0]	Expected : [1]	Observed : [1], Detailed [0.9291159148254146]
+Perceptron Out 0.454305 
+Perceptron Out 0.997445 
+Perceptron Out 1.000000 
+Perceptron Out 0.981647 
+Perceptron Out 0.905881 
+Perceptron Out 0.066165 
+[1, 1, 1, 1, 0]	Expected : [0]	Observed : [0], Detailed [0.06616540070685001]
+Perceptron Out 0.965611 
+Perceptron Out 0.249660 
+Perceptron Out 0.997989 
+Perceptron Out 0.996028 
+Perceptron Out 0.276832 
+Perceptron Out 0.063034 
+[0, 0, 0, 0, 1]	Expected : [0]	Observed : [0], Detailed [0.06303396003722295]
+Perceptron Out 0.898920 
+Perceptron Out 0.946503 
+Perceptron Out 0.999949 
+Perceptron Out 0.999991 
+Perceptron Out 0.068295 
+Perceptron Out 0.902055 
+[1, 0, 0, 0, 1]	Expected : [1]	Observed : [1], Detailed [0.9020551089360539]
+Perceptron Out 0.462214 
+Perceptron Out 0.996056 
+Perceptron Out 0.999941 
+Perceptron Out 0.977982 
+Perceptron Out 0.561636 
+Perceptron Out 0.103336 
+[0, 1, 0, 0, 1]	Expected : [0]	Observed : [0], Detailed [0.10333575809837704]
+Perceptron Out 0.213968 
+Perceptron Out 0.999926 
+Perceptron Out 0.999999 
+Perceptron Out 0.999952 
+Perceptron Out 0.197002 
+Perceptron Out 0.014471 
+[1, 1, 0, 0, 1]	Expected : [0]	Observed : [0], Detailed [0.014470759339860943]
+Perceptron Out 0.964612 
+Perceptron Out 0.265874 
+Perceptron Out 0.999579 
+Perceptron Out 0.994276 
+Perceptron Out 0.336686 
+Perceptron Out 0.065224 
+[0, 0, 1, 0, 1]	Expected : [0]	Observed : [0], Detailed [0.06522412904145274]
+Perceptron Out 0.896191 
+Perceptron Out 0.950637 
+Perceptron Out 0.999989 
+Perceptron Out 0.999988 
+Perceptron Out 0.088584 
+Perceptron Out 0.900355 
+[1, 0, 1, 0, 1]	Expected : [1]	Observed : [1], Detailed [0.9003551772819277]
+Perceptron Out 0.454846 
+Perceptron Out 0.996376 
+Perceptron Out 0.999988 
+Perceptron Out 0.968523 
+Perceptron Out 0.629469 
+Perceptron Out 0.093467 
+[0, 1, 1, 0, 1]	Expected : [0]	Observed : [0], Detailed [0.09346727637310923]
+Perceptron Out 0.209019 
+Perceptron Out 0.999932 
+Perceptron Out 1.000000 
+Perceptron Out 0.999930 
+Perceptron Out 0.245454 
+Perceptron Out 0.013045 
+[1, 1, 1, 0, 1]	Expected : [0]	Observed : [0], Detailed [0.013044656654146124]
+Perceptron Out 0.998898 
+Perceptron Out 0.000614 
+Perceptron Out 0.999964 
+Perceptron Out 0.998648 
+Perceptron Out 0.498068 
+Perceptron Out 0.010160 
+[0, 0, 0, 1, 1]	Expected : [0]	Observed : [0], Detailed [0.010160184511996984]
+Perceptron Out 0.996528 
+Perceptron Out 0.031612 
+Perceptron Out 0.999999 
+Perceptron Out 0.999997 
+Perceptron Out 0.159671 
+Perceptron Out 0.018485 
+[1, 0, 0, 1, 1]	Expected : [0]	Observed : [0], Detailed [0.018485404731970526]
+Perceptron Out 0.965200 
+Perceptron Out 0.317876 
+Perceptron Out 0.999999 
+Perceptron Out 0.992417 
+Perceptron Out 0.768579 
+Perceptron Out 0.059505 
+[0, 1, 0, 1, 1]	Expected : [0]	Observed : [0], Detailed [0.059504607682678505]
+Perceptron Out 0.897797 
+Perceptron Out 0.961210 
+Perceptron Out 1.000000 
+Perceptron Out 0.999984 
+Perceptron Out 0.388733 
+Perceptron Out 0.874970 
+[1, 1, 0, 1, 1]	Expected : [1]	Observed : [1], Detailed [0.8749697609529824]
+Perceptron Out 0.998864 
+Perceptron Out 0.000668 
+Perceptron Out 0.999992 
+Perceptron Out 0.998050 
+Perceptron Out 0.568174 
+Perceptron Out 0.009386 
+[0, 0, 1, 1, 1]	Expected : [0]	Observed : [0], Detailed [0.009385541663552502]
+Perceptron Out 0.996423 
+Perceptron Out 0.034313 
+Perceptron Out 1.000000 
+Perceptron Out 0.999996 
+Perceptron Out 0.201243 
+Perceptron Out 0.017965 
+[1, 0, 1, 1, 1]	Expected : [0]	Observed : [0], Detailed [0.017965355051565223]
+Perceptron Out 0.964189 
+Perceptron Out 0.336534 
+Perceptron Out 1.000000 
+Perceptron Out 0.989091 
+Perceptron Out 0.814941 
+Perceptron Out 0.064911 
+[0, 1, 1, 1, 1]	Expected : [0]	Observed : [0], Detailed [0.06491096829621298]
+Perceptron Out 0.895041 
+Perceptron Out 0.964250 
+Perceptron Out 1.000000 
+Perceptron Out 0.999976 
+Perceptron Out 0.457477 
+Perceptron Out 0.865456 
+[1, 1, 1, 1, 1]	Expected : [1]	Observed : [1], Detailed [0.8654555801269767]
+Total 32, Correct 32, Binary Accuracy 1.000000 

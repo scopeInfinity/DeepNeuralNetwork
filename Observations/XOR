@@ -1,0 +1,58 @@
+Output
+==========
+Perceptron Out 0.112905
+Perceptron Out 0.968094
+Perceptron Out 0.062707
+[0, 0]  Expected : [0]  Observed : [0], Detailed [0.06270662560976974]
+Perceptron Out 0.003584
+Perceptron Out 0.018949
+Perceptron Out 0.923211
+[1, 0]  Expected : [1]  Observed : [1], Detailed [0.9232114752402941]
+Perceptron Out 0.931647
+Perceptron Out 0.999954
+Perceptron Out 0.000185
+[0, 1]  Expected : [1]  Observed : [0], Detailed [0.000184766193114602]
+Perceptron Out 0.278054
+Perceptron Out 0.932723
+Perceptron Out 0.024172
+[1, 1]  Expected : [0]  Observed : [0], Detailed [0.024171523017804536]
+Total 4, Correct 3, Binary Accuracy 0.750000
+Weights of Network
+Layer Weights
+[-2.0614043100107224, -3.5663949335226555, 4.6736664376745924]
+[3.4125323593600316, -7.359425489248582, 6.576182937197112]
+Layer Weights
+[2.6002706031990344, -7.014653480012549, -4.661541189539096]
+
+Filtered
+===========
+Perceptron 1
+Input     Output
+0 0        0
+0 1        0
+1 0        1
+1 1        0
+                      _
+Perceptron 1 learned ab
+
+Perceptron 2
+Input     Output
+0 0        1
+0 1        0
+1 0        1
+1 1        1
+                       _
+Perceptron 2 learned a+b
+
+Perceptron 3
+Input     Output
+0 0        0
+0 1        1
+1 0        0
+1 1        0
+                     __      _        _
+Perceptron 3 learned p1p2 = (a + b)(a+b)
+                            __ 
+                          = ab+ab
+			  = XOR (Learned by NN)
+

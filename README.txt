@@ -1,18 +1,19 @@
 # Deep Neural Network
 
-   ##### Create Model using DeepNeuralNetwork class
+##### Create Model using DeepNeuralNetwork class
    args = List[NumberOfBinaryInputs, HiddenPerceptrons,..,HiddenPerceptrons,Number ofBinaryOutputs]
    
    `net = DeepNeuralNetwork([5,10,1])`
    
-   ##### Learn weights via backpropogation
+
+##### Learn weights via backpropogation
    ___in__ and ___out__ is a pair of sample test
    `net.backpropogation(_in,_out)`
    
-   ##### Compute expected output from learned network
+##### Compute expected output from learned network
    `print net.compute(_in)`
    
-   ##### Sample Code snippet for learning Pallindromic Bits
+##### Sample Code snippet for learning Pallindromic Bits
    
 ```python
 def test_pallindome(bits=5):
@@ -57,7 +58,7 @@ if __name__ == "__main__":
         total+=1
         print "%s\tExpected : %s\tObserved : %s, Detailed %s" % (str(_in),str(_out),str(cout),str(output))
     print "Total %d, Correct %d, Binary Accuracy %f " % (total,correct, correct*1.0/total)
-   ```
+```
 
 ![Screenshot](https://github.com/scopeInfinity/DeepNeuralNetwork/blob/master/Screenshot/5BitPallindrome.png?raw=true)
 

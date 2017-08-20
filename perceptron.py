@@ -1,28 +1,30 @@
+import math
+
 class Perceptron:
     '''
     Perceptron for learning linear binary functions
     '''
 
-    # threshold weight and then all input weights
-    weights = []
-
     # Number of inputs in binary function
     def __init__(self, c_input):
+        # threshold weight and then all input weights
         self.weights = [0] * (c_input+1)
         self.c_input = c_input
+        self.out = None
 
     # Activation Function
     def activate(self, outgoing):
-        if outgoing > 0:
-            return True
-        return False
+        self.out = 1/(1+math.exp(-outgoing))
+        return self.out
 
     # Compute perceptron output
     def compute(self,inputs):
         assert(len(inputs)+1==len(self.weights))
         sum = 1*self.weights[0]
+        self.linput = [1]
         for i,val in enumerate(inputs):
             sum += self.weights[i+1]*val
+            self.linput.append(val)
         return self.activate(sum)
 
     # Train for binary input/output, single step
